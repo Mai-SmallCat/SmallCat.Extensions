@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallCat.Extensions.Swagger
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallCat.Extensions.UnifiedResponse", "SmallCat.Extensions.UnifiedResponse\SmallCat.Extensions.UnifiedResponse.csproj", "{94D6EA3B-EFF3-4A94-B1DA-E642DF15AAF9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallCat.Extensions.Serilog", "SmallCat.Extensions.Serilog\SmallCat.Extensions.Serilog.csproj", "{DB30D07C-25CF-4980-9129-20852999E897}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{94D6EA3B-EFF3-4A94-B1DA-E642DF15AAF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94D6EA3B-EFF3-4A94-B1DA-E642DF15AAF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94D6EA3B-EFF3-4A94-B1DA-E642DF15AAF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB30D07C-25CF-4980-9129-20852999E897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB30D07C-25CF-4980-9129-20852999E897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB30D07C-25CF-4980-9129-20852999E897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB30D07C-25CF-4980-9129-20852999E897}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
