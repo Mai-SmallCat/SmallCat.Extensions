@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>SmallCat.Swagger</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.0-rc.1.24452.1" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0-rc.2.24473.5"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0-rc.2.24473.5"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.0-rc.2.24473.5"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.8.1"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="8.0.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="UI\favicon-16x16.png"/>
+        <EmbeddedResource Include="UI\favicon-32x32.png"/>
+        <EmbeddedResource Include="UI\index.css"/>
+        <EmbeddedResource Include="UI\index.html"/>
+        <EmbeddedResource Include="UI\oauth2-redirect.html"/>
+        <EmbeddedResource Include="UI\swagger-initializer.js"/>
+        <EmbeddedResource Include="UI\swagger-ui.css"/>
+        <EmbeddedResource Include="UI\swagger-ui.js"/>
+        <EmbeddedResource Include="UI\swagger-ui-bundle.js"/>
+        <EmbeddedResource Include="UI\swagger-ui-es-bundle.js"/>
+        <EmbeddedResource Include="UI\swagger-ui-es-bundle-core.js"/>
+        <EmbeddedResource Include="UI\swagger-ui-standalone-preset.js"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
+
+</Project>

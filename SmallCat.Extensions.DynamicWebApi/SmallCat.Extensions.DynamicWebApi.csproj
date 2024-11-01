@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>SmallCat.Extensions.DynamicWebApi</Title>
+        <Authors>RemMai</Authors>
+        <Copyright>RemMai</Copyright>
+        <PackageProjectUrl>https://github.com/Mai-SmallCat/SmallCat.Extensions.DynamicWebApi.git</PackageProjectUrl>
+        <PackageLicenseUrl>Https://opensource.org/licenses/MIT </PackageLicenseUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
+</Project>
