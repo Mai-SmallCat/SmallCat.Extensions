@@ -9,7 +9,7 @@
         <Authors>RemMai</Authors>
         <Copyright>RemMai</Copyright>
         <PackageProjectUrl>https://github.com/Mai-SmallCat/SmallCat.Extensions.AutoInject.git</PackageProjectUrl>
-        <PackageLicenseUrl>Https://opensource.org/licenses/MIT </PackageLicenseUrl>
+        <PackageLicense>Https://opensource.org/licenses/MIT </PackageLicense>
     </PropertyGroup>
 
     <ItemGroup>

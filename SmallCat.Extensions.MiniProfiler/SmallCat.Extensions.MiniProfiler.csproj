@@ -5,6 +5,11 @@
         <LangVersion>latest</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Title>SmallCat.Extensions.MiniProfiler</Title>
+        <Authors>RemMai</Authors>
+        <Copyright>RemMai</Copyright>
+        <PackageProjectUrl>https://github.com/Mai-SmallCat/SmallCat.Extensions.MiniProfiler.git</PackageProjectUrl>
+        <PackageLicense>Https://opensource.org/licenses/MIT</PackageLicense>
     </PropertyGroup>
 
     <ItemGroup>

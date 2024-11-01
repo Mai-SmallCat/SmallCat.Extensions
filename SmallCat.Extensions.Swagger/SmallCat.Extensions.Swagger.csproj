@@ -5,7 +5,11 @@
         <LangVersion>latest</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <RootNamespace>SmallCat.Swagger</RootNamespace>
+        <Title>SmallCat.Extensions.Swagger</Title>
+        <Authors>RemMai</Authors>
+        <Copyright>RemMai</Copyright>
+        <PackageProjectUrl>https://github.com/Mai-SmallCat/SmallCat.Extensions.Swagger.git</PackageProjectUrl>
+        <PackageLicense>Https://opensource.org/licenses/MIT</PackageLicense>
     </PropertyGroup>
 
     <ItemGroup>
