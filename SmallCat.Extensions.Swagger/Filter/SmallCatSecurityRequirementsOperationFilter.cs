@@ -11,8 +11,9 @@ internal class SmallCatSecurityRequirementsOperationFilter : IOperationFilter
 
     public SmallCatSecurityRequirementsOperationFilter(bool includeUnauthorizedAndForbiddenResponses = true, string securitySchemaName = "oauth2")
     {
-        IEnumerable<string> PolicySelector(IEnumerable<AuthorizeAttribute> authAttributes) => from a in authAttributes where !string.IsNullOrEmpty(a.Policy) select a.Policy;
         _filter = new SecurityRequirementsOperationFilter<AuthorizeAttribute>(PolicySelector, includeUnauthorizedAndForbiddenResponses, securitySchemaName);
+        return;
+        IEnumerable<string> PolicySelector(IEnumerable<AuthorizeAttribute> authAttributes) => from a in authAttributes where !string.IsNullOrEmpty(a.Policy) select a.Policy;
     }
 
 

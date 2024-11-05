@@ -9,8 +9,7 @@ namespace SmallCat.Extensions.Serilog;
 
 public static class SmallCatSerilogExtensions
 {
-    private const string OutputTemplate =
-        "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} <{ThreadId:00}> [{Level:u3}] {Message:lj}{NewLine}{Exception}";
+    private const string OutputTemplate = "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} <{ThreadId:00}> [{Level:u3}] {Message:lj}{NewLine}{Exception}";
 
     public static WebApplicationBuilder AddSmallCatSerilog(this WebApplicationBuilder webApplicationBuilder, string logFilePath = "logs", string logFileName = "app")
     {
