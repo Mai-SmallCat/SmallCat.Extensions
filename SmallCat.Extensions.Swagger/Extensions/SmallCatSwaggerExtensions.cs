@@ -20,7 +20,7 @@ namespace SmallCat.Extensions.Swagger;
 /// </summary>
 public static class SmallCatSwaggerExtensions
 {
-    private static readonly OpenApiInfo _openApiInfo = new() { Title = "RemMai'Blog 开放Api接口", Version = "v1" };
+    private static readonly OpenApiInfo OpenApiInfo = new() { Title = "OpenApi Doc", Version = "v1" };
 
     public static IServiceCollection AddSmallCatSwagger(this IServiceCollection services, Action<SwaggerGenOptions>? swaggerGenOptions = null)
     {
@@ -29,12 +29,12 @@ public static class SmallCatSwaggerExtensions
         var section         = configuration.GetSection("OpenApiInfo");
         if (section.Value != null)
         {
-            configuration.GetSection("OpenApiInfo").Bind(_openApiInfo);
+            configuration.GetSection("OpenApiInfo").Bind(OpenApiInfo);
         }
 
         swaggerGenOptions ??= options =>
         {
-            options.SwaggerDoc(_openApiInfo.Version, _openApiInfo);
+            options.SwaggerDoc(OpenApiInfo.Version, OpenApiInfo);
 
             // TODO：一定要返回true！
             options.DocInclusionPredicate((_, _) => true);
@@ -82,7 +82,7 @@ public static class SmallCatSwaggerExtensions
             {
                 options.IndexStream = () => Assembly.GetExecutingAssembly().GetManifestResourceStream("SmallCat.Extensions.Swagger.UI.index.html");
                 options.RoutePrefix = "swagger";
-                options.SwaggerEndpoint($"/swagger/{_openApiInfo.Version}/swagger.json", _openApiInfo.Title);
+                options.SwaggerEndpoint($"/swagger/{OpenApiInfo.Version}/swagger.json", OpenApiInfo.Title);
             });
         }
 

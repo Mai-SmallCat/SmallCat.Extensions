@@ -107,12 +107,13 @@ public class DynamicWebApiConvention : IApplicationModelConvention
     /// <param name="controllerType"></param>
     private static void ConfigurationApiResult(ActionModel action, TypeInfo controllerType)
     {
-        var realAction = action.ActionMethod.GetRealType();
-        var packResult = AppConsts.ConfigurationApiResult?.Invoke(controllerType, action, realAction) ?? false;
+        var realType = action.ActionMethod.GetRealType();
+
+        var packResult = AppConsts.ConfigurationApiResult?.Invoke(controllerType, action, realType) ?? false;
 
         if (!packResult || AppConsts.UnifiedResultType == null) return;
-        
-        var restFulResultType = AppConsts.UnifiedResultType.MakeGenericType(realAction);
+
+        var restFulResultType = AppConsts.UnifiedResultType.MakeGenericType(realType);
         action.Filters.Add(new ProducesResponseTypeAttribute(restFulResultType, StatusCodes.Status200OK));
     }
 

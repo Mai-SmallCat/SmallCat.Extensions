@@ -40,6 +40,8 @@ public class SmallCatResultFilter : IResultFilter, IAsyncResultFilter
 
     public async Task OnResultExecutionAsync(ResultExecutingContext context, ResultExecutionDelegate next)
     {
+        OnResultExecuting(context);
+
         await next();
     }
 }
